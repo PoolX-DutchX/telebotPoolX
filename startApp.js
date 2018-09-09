@@ -35,9 +35,9 @@ const poolBalance = async msg => {
   });
 
   return msg.reply.text(
-    "Total pool contribution balance is " +
+    "Total pool contribution balance is the equivalent of " +
       web3.utils.fromWei(balance, "ether") +
-      " ether."
+      " USD in ether. 10K USD is needed to list TestToken :-)"
   );
 };
 
