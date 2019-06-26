@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports =  {
     poolFactoryAddress: '0x4cc4f956d39ff5f360343e453ab7c3f4cfadc593',
     poolLibraryAddress: '0x1A48393ba853b9e1DE7Fc1c041FDaAf04af52454',
@@ -9,5 +11,5 @@ module.exports =  {
     nodeConnection:
       "https://rinkeby.infura.io/v3/2f72e1e9d96b4a018cd94093bf7006d7",
     numberOfConfirmations: 2,
-    botNumber: "622307864:AAHIhnEhS-WhA-ElEvbcCSOCU1Hj8Xb_zUM"
+    botNumber: process.env.TELEGRAM_BOT_TOKEN
 }
