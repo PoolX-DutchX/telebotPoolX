@@ -4,7 +4,7 @@
   "description": "PoolX Telegram Bot",
   "main": "lib/telebot.js",
   "engines": {
-    "node": ">= 6.0.0"
+    "node": "11.13.0"
   },
   "dependencies": {
     "erc20-contract-js": "^1.3.1",
