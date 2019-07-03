@@ -1,5 +1,3 @@
-// require('dotenv').config()
-
 module.exports =  {
     poolFactoryAddress: '0x4cc4f956d39ff5f360343e453ab7c3f4cfadc593',
     poolLibraryAddress: '0x1A48393ba853b9e1DE7Fc1c041FDaAf04af52454',
