@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv').config()
 
 module.exports =  {
     poolFactoryAddress: '0x4cc4f956d39ff5f360343e453ab7c3f4cfadc593',

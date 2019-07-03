@@ -1,1 +1,1 @@
-web: node startApp.js
+web: node startApp.js -p $PORT
