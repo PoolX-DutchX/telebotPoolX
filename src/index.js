@@ -1,3 +1,5 @@
+const http = require('http');
+
 const config = require("./configuration");
 const { botNumber, poolxUrl } = config;
 const TeleBot = require("./lib/telebot");
@@ -22,6 +24,12 @@ const poolsInfo = async msg => {
 
   bot.sendMessage(msg.from.id, reply, { parseMode: "HTML" });
 };
+
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.write('Hello World!');
+  res.end();
+}).listen(process.env.PORT);
 
 // bot commands
 bot.on(["/start", "/hello", "/help"], msg => {
